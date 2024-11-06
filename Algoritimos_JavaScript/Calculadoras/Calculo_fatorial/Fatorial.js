@@ -16,3 +16,4 @@ function escrevaCalcular() {
     parseInt(document.getElementById("Resultado").value = (`${calculo.toFixed(2)}`))
 
 }
+// esperando aprovação
