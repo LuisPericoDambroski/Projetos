@@ -1,0 +1,12 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+.Fatorial{
+   padding: 20px;
+}
+button :hover{
+    color: aliceblue;
+    background-color: beige;
+}
