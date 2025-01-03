@@ -18,4 +18,4 @@ function Calculo() {
     var resultado = calcularfatorial(numero);
     document.getElementById("Resultado").innerHTML = "Fatorial de " + numero + " é: " + resultado;
 }
-// esperando aprovação do colaborador Carlos Araki
+// Esperando aprovação do colaborador Carlos Araki
