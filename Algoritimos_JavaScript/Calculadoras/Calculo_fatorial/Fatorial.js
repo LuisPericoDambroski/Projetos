@@ -1,19 +1,20 @@
-function escrevaCalcular() {
-    var numero = parseInt(document.getElementById("primeiroFatorial").value)
-    var contador 
-    var resultado=1
-    
-    if(numero===0){
-        resultado=1
+function calcularfatorial(numero) {
+    if (numero === 0 || numero === 1) {
+        
+        return 1;
+    } else {
+        return numero * calcularfatorial(numero - 1);
     }
-    for (contador =numero ; contador >=1;contador--){
-
-        resultado*=contador
-       
-    }
-    var calculo = resultado
-
-    parseInt(document.getElementById("Resultado").value = (`${calculo.toFixed(2)}`))
-
 }
-// esperando aprovação
+
+function Calculo() {
+    var numero = parseInt(document.getElementById("Fatorial").value);
+
+    if (isNaN(numero) || numero < 0) {
+        alert("!!Por favor, insira um número inteiro não negativo.!!");
+        return;
+    }
+
+    var resultado = calcularfatorial(numero);
+    document.getElementById("Resultado").innerHTML = "Fatorial de " + numero + " é: " + resultado;
+}
